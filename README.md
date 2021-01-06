@@ -105,7 +105,7 @@ SELECT * FROM hr.countries;
 
 4. Faça isso até finalizar todos os desafios e depois siga as instruções de como entregar o projeto em [**Instruções para entregar seu projeto**](#instruções-para-entregar-seu-projeto)
 
-5. Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter **na pasta raiz do projeto** os arquivos `desafio1.sql`, `desafio2.sql` e assim por diante até o `desafio16.sql`, que conterão seu código `SQL` de cada desafio obrigatório, respectivamente. Se você fizer desafio bônus, o seu _Pull Request_ também deverá conter o arquivo `desafio17.sql` (caso faça o desafio 17), `desafio18.sql` (caso faça o desafio 18) e o `desafio19.sql` (caso faça o desafio 19).
+5. Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter os arquivos `desafio1.sql`, `desafio2.sql` e assim por diante até o `desafio16.sql`, que conterão seu código `SQL` de cada desafio obrigatório, respectivamente. Se você fizer desafio bônus, o seu _Pull Request_ também deverá conter o arquivo `desafio17.sql` (caso faça o desafio 17), `desafio18.sql` (caso faça o desafio 18) e o `desafio19.sql` (caso faça o desafio 19).
 
 ## ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
 
@@ -199,7 +199,7 @@ MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost npm test
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b seunome-mysql-vocabulary-booster`
 
-4. Para cada exercício você deve criar um novo arquivo sql **na pasta raiz do projeto** seguindo a seguinte estrutura:
+4. Para cada exercício você deve criar um novo arquivo sql seguindo a seguinte estrutura:
   * desafio1.sql, desafio2.sql, desafio3.sql, desafio4.sql, ..., desafioN.sql
 
 5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
@@ -583,11 +583,13 @@ Crie uma TRIGGER que, a cada nova inserção realizada na tabela `orders`, insir
 
 >Use o banco `w3schools` como referência
 
-Agora teste a funcionalidade da trigger: 
+A partir disso, o avaliador vai executar dois processos: 
 
-1. Insira na tabela `orders`um novo registro com os dados: `CustomerID` com valor 4, `EmployeeID` com valor 2 e `ShipperID` com valor 2;
+1. Inserir na tabela `orders`um novo registro com os dados: `CustomerID` com valor 4, `EmployeeID` com valor 2 e `ShipperID` com valor 2;
 
-2. Monte uma query que mostre todos os `CustomerID` igual a 4.
+2. Montar uma query que mostre todos os `CustomerID` igual a 4.
+
+Retomando que não é necessário incluir as queries para INSERIR e SELECIONAR, elas já vão ser executadas automaticamente pelo próprio teste.
 
 ---
 
